@@ -10,18 +10,17 @@ namespace CushBoss.Controllers
     {
         public ActionResult Index()
         {
-            
-
             return View();
         }
 
         public ActionResult About()
         {
-            
-
             return View();
         }
-
+        public ActionResult Register()
+        {
+            return View();
+        }
         
     }
 }

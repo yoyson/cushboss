@@ -5,6 +5,7 @@
 		<title>CushBoss alpha</title>
 		<link href='http://fonts.googleapis.com/css?family=Andika' rel='stylesheet' type='text/css'>
 		<link href="@Url.Content("~/Content/style.css")" rel='stylesheet' type='text/css'>
+        @Scripts.Render("~/bundles/jqueryval")
 	</head>
 
 	<body>
@@ -20,12 +21,7 @@
 			</header>
             @RenderBody()
             <footer>
-            @Html.ActionLink("Home", 
-                "Index",   // <-- ActionMethod
-                "Home",  // <-- Controller Name.
-                new {}, // <-- Route arguments.
-                null  
-                )
+            @Html.ActionLink("Home", "Index", "Home", new {}, null)
             @Html.ActionLink("About", 
                 "About",   // <-- ActionMethod
                 "Home",  // <-- Controller Name.
@@ -38,11 +34,16 @@
                 new {}, // <-- Route arguments.
                 null  
                 )
+            @Html.ActionLink("Register", 
+                "Register",   // <-- ActionMethod
+                "Home",  // <-- Controller Name.
+                new {}, // <-- Route arguments.
+                null  
+                )
 		</footer>
 		</div>
-
-		
-    
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
 	</body>
 </html>
 

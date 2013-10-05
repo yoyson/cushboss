@@ -1,40 +1,36 @@
-﻿@{
+﻿@model CushBoss.Models.LoginModel
+@{
     ViewBag.Title = "CushBoss | Home";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<span class="small_form">or</span>
+<!-- <span class="small_form">or</span> -->
 <div class="LogInForm" id="LogInForm">
     <span class="form_header"><strong>Sign in</strong></span>
-    <form action="">
-        <div>
-            <input type="text" placeholder="Username" required="" id="username" />
-        </div>
-        <div>
-            <input type="password" placeholder="Password" required="" id="password" />
-        </div>
-        <div>
-            <input type="submit" value="Log in" />
-            <a href="#">Lost your password?</a>
-        </div>
-    </form>
+    @using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl })) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+        <ol class="list">
+            <li>
+                @Html.LabelFor(m => m.UserName)
+                @Html.TextBoxFor(m => m.UserName)
+                @Html.ValidationMessageFor(m => m.UserName)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.Password)
+                @Html.PasswordFor(m => m.Password)
+                @Html.ValidationMessageFor(m => m.Password)
+            </li>
+            <li>
+                @Html.CheckBoxFor(m => m.RememberMe)
+                @Html.LabelFor(m => m.RememberMe, new { @class = "checkbox" })
+            </li>
+        </ol>
+        <input type="submit" value="Log in" />
+    }
 </div>
-<div class="RegisterForm" id="RegisterForm">
-    <span class="form_header"><strong>Sign up</strong></span>
-    <form action="">
-        <div>
-            <input type="text" placeholder="Username" required="" id="registerusername" />
-        </div>
-        <div>
-            <input type="password" placeholder="Password" required="" id="registerpassword" />
-        </div>
-        <div>
-            <input type="email" placeholder="Email" required="" id="email" />
-        </div>
-        <div>
-            <input type="submit" value="Register" />
-            <a href="#">Troubleshooting</a>
-        </div>
-    </form>
-</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
 
