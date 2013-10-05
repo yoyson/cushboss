@@ -42,7 +42,14 @@ header {
 	left: 10%;
 	width: 80%;
 }
-	
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    width: 40%;
+    height: 10%;
+}
 .wrapper {
 	opacity: 0.75; 
 	background-color: #13586E;
@@ -117,7 +124,18 @@ hr {
 	opacity: 1;
 	position: absolute; 
 }
-
+.MainDiv {
+	margin:15px;
+	color: white; 
+	text-align: center;
+	font-size: 100%;
+	opacity: 1;
+	position: absolute; 
+	top: 45%; 
+	left: 0;
+	width: 100%;
+	height: 45%;
+}
 input {
 	padding: 5px;
 	font-size: 100%;

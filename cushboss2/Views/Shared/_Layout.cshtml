@@ -19,9 +19,22 @@
 			</p>
 			</header>
             @RenderBody()
+            
 		</div>
 
 		<footer>
+            @Html.ActionLink("Home", 
+                "Index",   // <-- ActionMethod
+                "Home",  // <-- Controller Name.
+                new {}, // <-- Route arguments.
+                null  
+                )
+            @Html.ActionLink("About", 
+                "About",   // <-- ActionMethod
+                "Home",  // <-- Controller Name.
+                new {}, // <-- Route arguments.
+                null  
+                )
 		</footer>
     
 	</body>
