@@ -48,7 +48,8 @@ footer {
     bottom: 0;
     left: 30%;
     width: 40%;
-    height: 10%;
+    height: 6%;
+    text-align: center;
 }
 .wrapper {
 	opacity: 0.75; 
@@ -125,7 +126,6 @@ hr {
 	position: absolute; 
 }
 .MainDiv {
-	margin:15px;
 	color: white; 
 	text-align: center;
 	font-size: 100%;
