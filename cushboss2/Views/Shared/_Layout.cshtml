@@ -1,7 +1,29 @@
-﻿<html>
-    <body>
-        <h2><strong>CushBoss</strong> - become a confectionery boss</h2>
-        @RenderBody()
-    </body>
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>CushBoss alpha</title>
+		<link href='http://fonts.googleapis.com/css?family=Andika' rel='stylesheet' type='text/css'>
+		<link href="@Url.Content("~/Content/style.css")" rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<div id="bg" class="bg"></div>
+		<div id="wrapper" class="wrapper"></div>
+		<div id="container" class="container">
+			<header>
+			<strong>CushBoss</strong><sub class="sub_header">alpha</sub>
+			<hr noshade>
+			<p class="header_text">
+				Make sweets. Sell sweets. Earn money.
+			</p>
+			</header>
+            @RenderBody()
+		</div>
+
+		<footer>
+		</footer>
+    
+	</body>
 </html>
 
