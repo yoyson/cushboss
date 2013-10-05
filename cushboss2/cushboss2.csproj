@@ -109,6 +109,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\GameController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -120,7 +121,12 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="App_Data\Database1.sdf" />
+    <Content Include="Content\Images\32_en_Blue_Banner_Rectangle.jpg" />
     <Content Include="Content\Images\background.jpg" />
+    <Content Include="Content\Gamestyle.css" />
+    <Content Include="Content\Images\candy.JPG" />
+    <Content Include="Content\Images\dolar.jpg" />
+    <Content Include="Content\Images\logout.png" />
     <Content Include="Global.asax" />
     <Content Include="Content\style.css" />
     <Content Include="Web.config" />
@@ -146,6 +152,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\About.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Game\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_GameLayout.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
