@@ -6,22 +6,15 @@ using System.Web.Mvc;
 
 namespace CushBoss.Controllers
 {
-    public class HomeController : Controller
+    public class GameController : Controller
     {
+        //
+        // GET: /Game/
+
         public ActionResult Index()
         {
-            
-
             return View();
         }
 
-        public ActionResult About()
-        {
-            
-
-            return View();
-        }
-
-        
     }
 }
