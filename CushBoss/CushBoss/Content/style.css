@@ -31,7 +31,10 @@ a:hover{
 	background-position: 50% 50%;
 	
 }
-
+.list
+{
+    list-style-type: none;
+}
 header {
 	color: white; 
 	text-align: center;
@@ -101,8 +104,8 @@ hr {
 }
 
 .LogInForm {
-	margin:15px;
-    border-right: thin solid #c2c2c2;
+	/*margin:15px;*/
+    /*border-right: thin solid #c2c2c2;*/
 	color: white; 
 	text-align: center;
 	font-size: 100%;
@@ -110,14 +113,14 @@ hr {
 	position: absolute; 
 	top: 45%; 
 	left: 0;
-	width: 48%;
+	width: 100%; /*48%*/
 	height: 45%;
 }
 .RegisterForm {
-	margin:15px;
+	/*margin:15px;*/
 	top: 45%;
 	right: 0;
-	width: 48%;
+	width: 100%; /*48%*/
 	height: 45%;
 	color: white; 
 	text-align: center;

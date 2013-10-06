@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 C:\Users\Hubcio\Documents\GitHub\cushboss\CushBoss\CushBoss\bin\CushBoss.dll
 C:\Users\Hubcio\Documents\GitHub\cushboss\CushBoss\CushBoss\bin\CushBoss.pdb
 C:\Users\Hubcio\Documents\GitHub\cushboss\CushBoss\CushBoss\bin\Antlr3.Runtime.dll
@@ -170,4 +169,3 @@ C:\Users\Mateusz\Documents\GitHub\cushboss\CushBoss\CushBoss\bin\zh-Hant\System.
 C:\Users\Mateusz\Documents\GitHub\cushboss\CushBoss\CushBoss\obj\Debug\CushBoss.csprojResolveAssemblyReference.cache
 C:\Users\Mateusz\Documents\GitHub\cushboss\CushBoss\CushBoss\obj\Debug\CushBoss.dll
 C:\Users\Mateusz\Documents\GitHub\cushboss\CushBoss\CushBoss\obj\Debug\CushBoss.pdb
->>>>>>> origin/master
